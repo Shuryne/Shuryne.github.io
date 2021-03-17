@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Shuryne.github.io/sitemap.xml
