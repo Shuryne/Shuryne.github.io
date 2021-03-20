@@ -1,8 +1,8 @@
 # 网站地址
 baseURL: "https://Shuryne.github.io"
 
-# GA 
-googleAnalytics: G-B99LVDK48T
+# GA
+googleAnalytics: UA-192671327-1
 
 # 网站title
 title: Shuryne
@@ -14,7 +14,7 @@ theme: hugo-PaperMod
 languageCode: "en-us"
 
 # home/category/tag 页面显示的文章数 (Default: 10)
-paginate: 5
+paginate: 6
 
 # home/category/tag 页面用于摘要的字数 (Default: 70)
 summaryLength: 50
