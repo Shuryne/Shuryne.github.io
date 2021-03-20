@@ -5,14 +5,51 @@
     <link>https://Shuryne.github.io/</link>
     <description>Recent content on Shuryne</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从seq2seq到Transformer</title>
+      <link>https://Shuryne.github.io/posts/%E4%BB%8Eseq2seq%E5%88%B0transformer/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E4%BB%8Eseq2seq%E5%88%B0transformer/</guid>
+      <description>&lt;p&gt;关于Seq2Seq和Transformer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>活着</title>
+      <link>https://Shuryne.github.io/posts/%E6%B4%BB%E7%9D%80/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E6%B4%BB%E7%9D%80/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;活着，写的是人对苦难的承受能力，和对世界乐观的态度&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>搏击俱乐部</title>
       <link>https://Shuryne.github.io/posts/%E6%90%8F%E5%87%BB%E4%BF%B1%E4%B9%90%E9%83%A8/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://Shuryne.github.io/posts/%E6%90%8F%E5%87%BB%E4%BF%B1%E4%B9%90%E9%83%A8/</guid>
-      <description>&lt;p&gt;抛开一切，重获自由。&lt;/p&gt;</description>
+      <description>&lt;p&gt;抛开一切，重获自由&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>神们自己</title>
+      <link>https://Shuryne.github.io/posts/%E7%A5%9E%E4%BB%AC%E8%87%AA%E5%B7%B1/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E7%A5%9E%E4%BB%AC%E8%87%AA%E5%B7%B1/</guid>
+      <description>&lt;p&gt;阿西莫夫对神的幻想&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>庆祝无意义</title>
+      <link>https://Shuryne.github.io/posts/%E5%BA%86%E7%A5%9D%E6%97%A0%E6%84%8F%E4%B9%89/</link>
+      <pubDate>Sun, 25 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E5%BA%86%E7%A5%9D%E6%97%A0%E6%84%8F%E4%B9%89/</guid>
+      <description>&lt;p&gt;米兰昆德拉的纯文学&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -21,25 +58,16 @@
       <pubDate>Sun, 25 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://Shuryne.github.io/posts/%E7%88%B1%E4%BD%A0%E5%B0%B1%E5%83%8F%E7%88%B1%E7%94%9F%E5%91%BD/</guid>
-      <description>&lt;p&gt;这是王小波和李银河的爱情回忆。&lt;/p&gt;</description>
+      <description>&lt;p&gt;这是王小波和李银河的爱情回忆&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Archive</title>
-      <link>https://Shuryne.github.io/archives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>数学之美</title>
+      <link>https://Shuryne.github.io/posts/%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://Shuryne.github.io/archives/</guid>
-      <description>archives</description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>https://Shuryne.github.io/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://Shuryne.github.io/search/</guid>
-      <description></description>
+      <guid>https://Shuryne.github.io/posts/%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E/</guid>
+      <description>&lt;p&gt;吴军老师是一个好写手，我非常喜欢他的文字。&lt;/p&gt;</description>
     </item>
     
   </channel>
