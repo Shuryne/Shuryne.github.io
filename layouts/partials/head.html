@@ -84,6 +84,5 @@
 {{- template "partials/templates/schema_json.html" . }}
 {{- end }}
 
-{{ if not .Site.IsServer }}
 {{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
+
