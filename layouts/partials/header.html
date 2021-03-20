@@ -1,6 +1,7 @@
 <head>
-    {{ template "_internal/google_analytics.html" . }}
+    {{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
     {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
 </head>
 
 {{- /*  theme-toggle is enabled  */}}
