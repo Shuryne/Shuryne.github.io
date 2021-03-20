@@ -12,8 +12,10 @@ tags: ["计算机", "NLP", 'Transformer']
 series: ["论文笔记"]
 categories: ["杂技浅尝"]
 
-ShowToc: false
+ShowToc: true
+TocOpen: true
 ShowBreadCrumbs: false
+searchHidden: false
 
 ---
 

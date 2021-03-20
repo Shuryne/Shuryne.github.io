@@ -2,7 +2,7 @@
 baseURL: "https://Shuryne.github.io"
 
 # GA
-googleAnalytics: UA-192671327-1
+#googleAnalytics: UA-192671327-1
 
 # 网站title
 title: Shuryne
@@ -65,22 +65,41 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: Theme PaperMod
+    description: "Shuryne's Home - https://Shuryne.github.io"
+    author: Shuryne
     # author: ["Me", "You"] # multiple authors
-
+  
+    # 网站黑白主题 auto/dark/light
     defaultTheme: auto
+    
+    # 是否支持切换网站主题
     # disableThemeToggle: true
-    ShowShareButtons: true
+    
+    # 显示文章分享到其他社交平台
+    ShowShareButtons: false
+    
+    # 显示文章阅读所需时间
     ShowReadingTime: true
+    
     # disableSpecial1stPost: true
+    
+    # 显示所有语言版本
     displayFullLangName: true
+    
+    # 显示建议阅读 上一篇/下一篇文章
     ShowPostNavLinks: true
+    
+    # 文章头显示Home>Posts
     ShowBreadCrumbs: true
+    
+    # 文章显示标题结构
     ShowToc: true
-    # comments: false
+    
+    # 开启文章评论 需要注册disque
+    # comments: true
     images: ["papermod-cover.png"]
-
+    
+    # profile模式 不建议开 比较丑
     profileMode:
         enabled: false
         title: PaperMod
@@ -93,12 +112,14 @@ params:
               url: archives
             - name: Tags
               url: tags
-
+    
+    # 主页信息模式 参数如下
     homeInfoParams:
         Title: "Abandon Everything And Regain Freedom"
         Content: >
             Welcome to **Shuryne**'s Home🌟.
-
+    
+    # 其他社交网站链接
     socialIcons:
         - name: github
           url: "https://github.com/Shuryne"
