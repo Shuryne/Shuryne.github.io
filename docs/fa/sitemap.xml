@@ -2,26 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Shuryne.github.io/fa/posts/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/posts/markdown-syntax/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/posts/markdown-syntax/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/posts/markdown-syntax/"
-                />
-  </url><url>
     <loc>https://Shuryne.github.io/fa/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,62 +19,7 @@
                 href="https://Shuryne.github.io/fa/categories/"
                 />
   </url><url>
-    <loc>https://Shuryne.github.io/fa/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/tags/css/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/tags/css/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/tags/css/"
-                />
-  </url><url>
-    <loc>https://Shuryne.github.io/fa/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/tags/html/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/tags/html/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/tags/html/"
-                />
-  </url><url>
-    <loc>https://Shuryne.github.io/fa/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/tags/markdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/tags/markdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/tags/markdown/"
-                />
-  </url><url>
     <loc>https://Shuryne.github.io/fa/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -110,26 +36,7 @@
                 href="https://Shuryne.github.io/fa/"
                 />
   </url><url>
-    <loc>https://Shuryne.github.io/fa/posts/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/posts/"
-                />
-  </url><url>
     <loc>https://Shuryne.github.io/fa/series/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -146,26 +53,7 @@
                 href="https://Shuryne.github.io/fa/series/"
                 />
   </url><url>
-    <loc>https://Shuryne.github.io/fa/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/categories/syntax/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/categories/syntax/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/categories/syntax/"
-                />
-  </url><url>
     <loc>https://Shuryne.github.io/fa/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -180,60 +68,6 @@
                 rel="alternate"
                 hreflang="fa"
                 href="https://Shuryne.github.io/fa/tags/"
-                />
-  </url><url>
-    <loc>https://Shuryne.github.io/fa/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/tags/themes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/tags/themes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/tags/themes/"
-                />
-  </url><url>
-    <loc>https://Shuryne.github.io/fa/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/categories/themes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/categories/themes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/categories/themes/"
-                />
-  </url><url>
-    <loc>https://Shuryne.github.io/fa/series/themes-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Shuryne.github.io/series/themes-guide/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://Shuryne.github.io/fr/series/themes-guide/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fa"
-                href="https://Shuryne.github.io/fa/series/themes-guide/"
                 />
   </url>
 </urlset>

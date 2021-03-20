@@ -1,5 +1,5 @@
 baseURL: "https://Shuryne.github.io"
-title: PaperMod
+title: Shuryne
 paginate: 5
 theme: hugo-PaperMod
 
@@ -19,7 +19,8 @@ minify:
 
 languages:
     en:
-        languageName: "English"
+#        languageName: "English"
+        languageName: "Chinese"
         weight: 1
         menu:
             main:
@@ -34,57 +35,6 @@ languages:
                   weight: 10
                 - name: Categories
                   url: categories/
-                  weight: 10
-
-    fr:
-        languageName: ":fr:"
-        weight: 2
-        title: PaperModL2
-        profileMode:
-            enabled: true
-            title: PaperMod
-            # imageUrl: "#"
-            # imageTitle: my image
-            # imageWidth: 120
-            # imageHeight: 120
-            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            buttons:
-                - name: Blog
-                  url: posts
-                - name: Tags
-                  url: tags
-        menu:
-            main:
-                - name: Archive
-                  url: archives/
-                  weight: 5
-                - name: Tags
-                  url: tags
-                  weight: 10
-                - name: Categories
-                  url: categories
-                  weight: 10
-                - name: Series
-                  url: series
-                  weight: 10
-                - name: NullLink
-                  url: "#"
-                - name: NullLink2
-                  url: "#"
-                - name: NullLink3
-                  url: "#"
-
-    fa:
-        languagedirection: rtl
-        weight: 3
-        title: PaperMod RTL
-        homeInfoParams:
-            Title: "Hi there \U0001F44B"
-            Content: Welcome to RTL layout
-        menu:
-            main:
-                - name: Tags
-                  url: tags
                   weight: 10
 
 outputs:
@@ -127,21 +77,11 @@ params:
     homeInfoParams:
         Title: "PaperMod"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
-
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Do give a 🌟 on Github !
-
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+            Welcome to **Shuryne**'s Home🌟.
 
     socialIcons:
         - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
-        - name: RsS
-          url: "index.xml"
+          url: "https://github.com/Shuryne"
 
     # label:
     #     text: "Home"
