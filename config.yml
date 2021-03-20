@@ -1,6 +1,9 @@
 # 网站地址
 baseURL: "https://Shuryne.github.io"
 
+# GA 
+googleAnalytics: G-B99LVDK48T
+
 # 网站title
 title: Shuryne
 
@@ -27,8 +30,6 @@ buildExpired: false
 
 blackfriday:
   extensions: "joinLines"
-  
-googleAnalytics: G-B99LVDK48T
   
 minify:
     disableXML: true
