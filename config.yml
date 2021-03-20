@@ -1,8 +1,22 @@
+# 网站地址
 baseURL: "https://Shuryne.github.io"
+
+# 网站title
 title: Shuryne
-paginate: 5
+
+# hugo 主题
 theme: hugo-PaperMod
 
+# 网站语言
+languageCode: "en-us"
+
+# home/category/tag 页面显示的文章数 (Default: 10)
+paginate: 5
+
+# home/category/tag 页面用于摘要的字数 (Default: 70)
+summaryLength: 50
+
+# hugo 生成的文件夹名称（Default: public）
 publishDir: docs
 
 enableInlineShortcodes: true
@@ -11,16 +25,18 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# googleAnalytics: UA-123-45
-
+blackfriday:
+  extensions: "joinLines"
+  
+googleAnalytics: G-B99LVDK48T
+  
 minify:
     disableXML: true
     # minifyOutput: true
 
 languages:
     en:
-#        languageName: "English"
-        languageName: "Chinese"
+        languageName: "English"
         weight: 1
         menu:
             main:
@@ -36,6 +52,9 @@ languages:
                 - name: Categories
                   url: categories/
                   weight: 10
+#                - name: About
+#                  url: About/
+#                  weight: 15
 
 outputs:
     home:
@@ -75,7 +94,7 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "Abandon Everything And Regain Freedom"
         Content: >
             Welcome to **Shuryne**'s Home🌟.
 
@@ -150,3 +169,4 @@ services:
         disableInlineCSS: true
     twitter:
         disableInlineCSS: true
+        
