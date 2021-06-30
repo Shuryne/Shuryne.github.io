@@ -7,6 +7,7 @@ date: 2018-11-12
 lastmod: 2021-03-20
 draft: false
 weight: 100
+isCJKLanguage: true
 
 tags: ["计算机", "NLP", 'Transformer']
 series: ["论文笔记"]
@@ -16,12 +17,15 @@ ShowToc: true
 TocOpen: true
 ShowBreadCrumbs: false
 searchHidden: false
-
 ---
 
-关于Seq2Seq和Transformer
+
+
+> 关于Seq2Seq和Transformer
 
 <!--more-->
+
+
 
 #### 1. Sequence to Sequence Learning with Neural Networks
 
