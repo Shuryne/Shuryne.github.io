@@ -1,5 +1,5 @@
 ---
-title: "职场工作心得"
+title: "The Bitter Lesson"
 author: "Shuryne"
 description: ""
 
@@ -16,7 +16,6 @@ categories: ["文学与创作"]
 ShowToc: false
 ShowBreadCrumbs: false
 searchHidden: false
-
 ---
 
 
