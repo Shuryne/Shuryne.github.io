@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS笔记 on Shuryne</title>
+    <link>https://Shuryne.github.io/series/cs%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in CS笔记 on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/series/cs%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>进化神经网络的一些前沿调研</title>
+      <link>https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E8%BF%9B%E5%8C%96%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%B0%83%E7%A0%94/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E8%BF%9B%E5%8C%96%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%B0%83%E7%A0%94/</guid>
+      <description>进化算法</description>
+    </item>
+    
+    <item>
+      <title>关键词抽取算法评价</title>
+      <link>https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7/</guid>
+      <description>一、常见算法及评价 1. TF-IDF 说明：利用词频（内部频率信息）和逆文档频率（外部信息）综合对关键词进行权重计算</description>
+    </item>
+    
+    <item>
+      <title>关于字符串匹配这件事</title>
+      <link>https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/</guid>
+      <description>工作中常用到字符串匹配，如何进行更好的字符串匹配？ AC自动机</description>
+    </item>
+    
+    <item>
+      <title>挨最毒的打，写更好的代码</title>
+      <link>https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%86%99%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%86%99%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81/</guid>
+      <description>代码规范 函数注释写清楚，参数解释可以为空，但是必须写 避免代码中出现过多的静态字符串，可以通过统一的文</description>
+    </item>
+    
+  </channel>
+</rss>

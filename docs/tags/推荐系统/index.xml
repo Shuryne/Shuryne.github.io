@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>推荐系统 on Shuryne</title>
+    <link>https://Shuryne.github.io/tags/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/</link>
+    <description>Recent content in 推荐系统 on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/tags/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Youtube的推荐系统是如何炼成的</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recomendation/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recomendation/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;经典推荐系统工业落地典范&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

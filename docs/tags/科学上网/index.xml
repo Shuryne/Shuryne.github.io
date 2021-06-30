@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科学上网 on Shuryne</title>
+    <link>https://Shuryne.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+    <description>Recent content in 科学上网 on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>提高开发效率：科学上网的正确姿势</title>
+      <link>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E5%A6%82%E4%BD%95%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E5%A6%82%E4%BD%95%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+      <description>SSR 教程： Vultr搭建SS教程 | Vultr Centos7安装配置ss客户端 - 吴昊博客 工具：vultr V2ray 工具 A</description>
+    </item>
+    
+  </channel>
+</rss>

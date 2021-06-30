@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发 on Shuryne</title>
+    <link>https://Shuryne.github.io/tags/%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 开发 on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>提高开发效率：面向服务器开发</title>
+      <link>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91%E9%85%8D%E7%BD%AE%E5%A4%A7%E5%85%A8/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91%E9%85%8D%E7%BD%AE%E5%A4%A7%E5%85%A8/</guid>
+      <description>SSH免密登录 本地.ssh/config中配置相关账号端口信息 将公钥写到远程主机：ssh-copy-</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率：用好Pycharm配置</title>
+      <link>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/pycharm%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/pycharm%E9%85%8D%E7%BD%AE/</guid>
+      <description>远端开发 1. SSH Configuration 本地在.ssh/config中设置Hosts Pycharm中设置ssh configur</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率：正确使用Git</title>
+      <link>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/git%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/git%E7%AC%94%E8%AE%B0/</guid>
+      <description>Git笔记 原理 https://juejin.im/post/6844903782451511303 https://zhuanlan.zhihu.com/p/66506485 https://tonybai.com/2020/04/07/illustrated-tale-of-git-internal-key-concepts/ 开发 git fetch upstream：首先将远端分支fetch到本地，此操作不会修改本地 git rebase</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率：Tmux常用命令</title>
+      <link>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/tmux%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/tmux%E7%AC%94%E8%AE%B0/</guid>
+      <description>Tmux笔记 介绍 推荐博客：Tmux使用手册 优势：对比nohup，tmux有其独到的优势，如能够同时开</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,14 +6,121 @@
     <description>Recent content in 论文笔记 on Shuryne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/series/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/series/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Youtube的推荐系统是如何炼成的</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recomendation/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recomendation/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;经典推荐系统工业落地典范&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Batch Norm: 通过标准化更好地管理梯度流</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch_norm/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch_norm/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;基于反向传播的神经网络，如何管理梯度流是训练的关键&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Flow</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/flow/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/flow/</guid>
+      <description>论文地址</description>
+    </item>
+    
+    <item>
+      <title>GAN: 对抗学习开山鼻祖</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/gan/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/gan/</guid>
+      <description>GAN的兴起，代表着一种哲学思想在计算机领域的成功 论文地址：</description>
+    </item>
+    
+    <item>
+      <title>Glove</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/glove/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/glove/</guid>
+      <description>Glove 基于全局词频统计的词表征，基于词共现矩阵 构造loss思想：通过概率的比例而不是概率本身去学习词向量</description>
+    </item>
+    
+    <item>
+      <title>NNLM</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/nnlm/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/nnlm/</guid>
+      <description>NNLM 基于局部预料 训练目标：LM</description>
+    </item>
+    
+    <item>
+      <title>Transformer-XL</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/transformer-xl/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/transformer-xl/</guid>
+      <description>Transformer-XL 解决长距离依赖问题 片段级递归机制：解决编码长距离依赖和上下文碎片化 相对位置编码机制：实现片段级递归</description>
+    </item>
+    
+    <item>
+      <title>VAE: 概率变换高手之路</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/vae/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/vae/</guid>
+      <description>VAE 论文地址：</description>
+    </item>
+    
+    <item>
+      <title>Word2vec</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/word2vec/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/word2vec/</guid>
+      <description>Word2vec 基于局部预料&amp;amp;窗口上下文 提出背景：采用分布式表示替代one-hot编码 方法 CBOW：已知周</description>
+    </item>
+    
+    <item>
+      <title>XLNet</title>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/xlnet/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/xlnet/</guid>
+      <description>XLNet 提出背景： 自回归LM只能利用上文，不能利用上下文 自编码DAE能利用上下文，但是[mask]会导致训</description>
+    </item>
+    
     <item>
       <title>从seq2seq到Transformer</title>
-      <link>https://Shuryne.github.io/posts/%E4%BB%8Eseq2seq%E5%88%B0transformer/</link>
+      <link>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/attention-is-all-you-need/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://Shuryne.github.io/posts/%E4%BB%8Eseq2seq%E5%88%B0transformer/</guid>
-      <description>&lt;p&gt;关于Seq2Seq和Transformer&lt;/p&gt;</description>
+      <guid>https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/attention-is-all-you-need/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;关于Seq2Seq和Transformer&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>电商的天花板在哪里</title>
+      <link>https://Shuryne.github.io/posts/%E6%9D%82%E7%9A%84%E6%96%87/%E7%94%B5%E5%95%86%E7%9A%84%E5%A4%A9%E8%8A%B1%E6%9D%BF%E5%9C%A8%E5%93%AA%E9%87%8C/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/posts/%E6%9D%82%E7%9A%84%E6%96%87/%E7%94%B5%E5%95%86%E7%9A%84%E5%A4%A9%E8%8A%B1%E6%9D%BF%E5%9C%A8%E5%93%AA%E9%87%8C/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;拼多多的成功上市、美团新崛起的社区团购等似乎在告诉我们一个事实：中国电商市场的天花板还没到顶。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
   </channel>

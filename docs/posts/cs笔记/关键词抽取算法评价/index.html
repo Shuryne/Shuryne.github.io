@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>关键词抽取算法评价 | Shuryne</title>
+
+<meta name="keywords" content="关键词抽取" />
+<meta name="description" content="一、常见算法及评价 1. TF-IDF 说明：利用词频（内部频率信息）和逆文档频率（外部信息）综合对关键词进行权重计算">
+<meta name="author" content="Shuryne">
+<link rel="canonical" href="https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7/" />
+<link href="/assets/css/stylesheet.min.599b0e9ad02d274d3cb655359f597ea4ffb4913107f886d7b6869ff79a84a726.css" integrity="sha256-WZsOmtAtJ008tlU1n1l&#43;pP&#43;0kTEH&#43;IbXtoaf95qEpyY=" rel="preload stylesheet"
+    as="style">
+
+<link rel="icon" href="https://Shuryne.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://Shuryne.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://Shuryne.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://Shuryne.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://Shuryne.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.81.0" />
+
+
+<meta property="og:title" content="关键词抽取算法评价" />
+<meta property="og:description" content="一、常见算法及评价 1. TF-IDF 说明：利用词频（内部频率信息）和逆文档频率（外部信息）综合对关键词进行权重计算" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7/" />
+<meta property="og:image" content="https://Shuryne.github.io/papermod-cover.png"/>
+<meta property="article:published_time" content="2021-06-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-06-26T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://Shuryne.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="关键词抽取算法评价"/>
+<meta name="twitter:description" content="一、常见算法及评价 1. TF-IDF 说明：利用词频（内部频率信息）和逆文档频率（外部信息）综合对关键词进行权重计算"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://Shuryne.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "关键词抽取算法评价",
+      "item": "https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "关键词抽取算法评价",
+  "name": "关键词抽取算法评价",
+  "description": "一、常见算法及评价 1. TF-IDF 说明：利用词频（内部频率信息）和逆文档频率（外部信息）综合对关键词进行权重计算",
+  "keywords": [
+    "关键词抽取"
+  ],
+  "articleBody": "一、常见算法及评价 1. TF-IDF 说明：利用词频（内部频率信息）和逆文档频率（外部信息）综合对关键词进行权重计算\n评价：\n 逆文档频率相当于利用外部统计信息对内部词频进行权重调整，实现了较强的baseline 由于对外部信息有依赖，若外部信息不及时更新，会出现最近年份等数字词（2019等）的IDF值较高，从而导致总体权重较高；除此之外，很多数字词都会获得较高的权重，如23、500等，这可能是因为外部文档缺少日期之类的信息  2. TextRank 说明：基于PageRank思想，考虑词的上下文共现（内部结构信息），构建关键词网络，并迭代计算节点边的权重\n评价：\n 图模型，速度上比TF-IDF低 只利用了文档内部信息，缺少外部辅助信息，所以导致效果上会抽取出一些无关的高频词（通常是副词） 后处理方面可以通过词性标注进一步过滤，但是严重依赖词性标注的性能，但是目前没看到有人这样做过  3. Topic Model 说明：常用Latent Dirichlet allocation（LDA）模型\n评价\n4. Word2vec 说明：苏剑林在博客中提出的一种基于word2vec的关键词抽取方法，核心思想是用文档中的词来生成原始文档（也即是一串连续词），不同的词生成文档的概率不同，概率较高的就是关键词\n评价：\n二、别人的经验  TF-IDF是一个很强的baseline，具有较强普适性，基本能应付大部分关键词抽取场景 主题模型抽取的关键词比较宽泛，不能很好体现主题 TextRank并不比TF-IDF有明显优势，而且因为设计构建图和随机游走的迭代算法，效率较低 对中文来说，分词以及词性标注性能对关键词抽取效果至关重要 从性能上来说，监督方法比以上无监督方法都会好很多  ",
+  "wordCount" : "666",
+  "inLanguage": "en",
+  "datePublished": "2021-06-26T00:00:00Z",
+  "dateModified": "2021-06-26T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Shuryne"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://Shuryne.github.io/posts/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuryne",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://Shuryne.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://Shuryne.github.io" accesskey="h" title="Shuryne (Alt + H)">Shuryne</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                
+                
+            </span>
+        </div>
+        <ul id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="https://Shuryne.github.io/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Shuryne.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Shuryne.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Shuryne.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li></ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+
+    <h1 class="post-title">
+      关键词抽取算法评价
+    </h1>
+    <div class="post-meta">
+
+June 26, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Shuryne
+
+</div>
+  </header> 
+
+  <div class="post-content">
+<h3 id="一常见算法及评价">一、常见算法及评价<a hidden class="anchor" aria-hidden="true" href="#一常见算法及评价">#</a></h3>
+<h4 id="1-tf-idf">1. TF-IDF<a hidden class="anchor" aria-hidden="true" href="#1-tf-idf">#</a></h4>
+<p>说明：利用词频（内部频率信息）和逆文档频率（外部信息）综合对关键词进行权重计算</p>
+<p>评价：</p>
+<ol>
+<li>逆文档频率相当于利用外部统计信息对内部词频进行权重调整，实现了较强的<code>baseline</code></li>
+<li>由于对外部信息有依赖，若外部信息不及时更新，会出现最近年份等数字词（2019等）的<code>IDF</code>值较高，从而导致总体权重较高；除此之外，很多数字词都会获得较高的权重，如23、500等，这可能是因为外部文档缺少日期之类的信息</li>
+</ol>
+<h4 id="2-textrank">2. TextRank<a hidden class="anchor" aria-hidden="true" href="#2-textrank">#</a></h4>
+<p>说明：基于<code>PageRank</code>思想，考虑词的上下文共现（内部结构信息），构建关键词网络，并迭代计算节点边的权重</p>
+<p>评价：</p>
+<ol>
+<li>图模型，速度上比<code>TF-IDF</code>低</li>
+<li>只利用了文档内部信息，缺少外部辅助信息，所以导致效果上会抽取出一些无关的高频词（通常是副词）</li>
+<li>后处理方面可以通过词性标注进一步过滤，但是严重依赖词性标注的性能，但是目前没看到有人这样做过</li>
+</ol>
+<h4 id="3-topic-model">3. Topic Model<a hidden class="anchor" aria-hidden="true" href="#3-topic-model">#</a></h4>
+<p>说明：常用<code>Latent Dirichlet allocation（LDA）</code>模型</p>
+<p>评价</p>
+<h4 id="4-word2vec">4. Word2vec<a hidden class="anchor" aria-hidden="true" href="#4-word2vec">#</a></h4>
+<p>说明：苏剑林在<a href="https://kexue.fm/archives/4316">博客</a>中提出的一种基于<code>word2vec</code>的关键词抽取方法，核心思想是用文档中的词来生成原始文档（也即是一串连续词），不同的词生成文档的概率不同，概率较高的就是关键词</p>
+<p>评价：</p>
+<h3 id="二别人的经验">二、别人的经验<a hidden class="anchor" aria-hidden="true" href="#二别人的经验">#</a></h3>
+<ul>
+<li><code>TF-IDF</code>是一个很强的<code>baseline</code>，具有较强普适性，基本能应付大部分关键词抽取场景</li>
+<li>主题模型抽取的关键词比较宽泛，不能很好体现主题</li>
+<li><code>TextRank</code>并不比<code>TF-IDF</code>有明显优势，而且因为设计构建图和随机游走的迭代算法，效率较低</li>
+<li>对中文来说，分词以及词性标注性能对关键词抽取效果至关重要</li>
+<li>从性能上来说，监督方法比以上无监督方法都会好很多</li>
+</ul>
+
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://Shuryne.github.io/tags/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/">关键词抽取</a></li>
+    </ul>
+    <nav class="paginav">
+      <a class="prev" href="https://Shuryne.github.io/posts/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/xlnet/">
+        <span class="title">« Prev Page</span>
+        <br>
+        <span>XLNet</span>
+      </a>
+      <a class="next" href="https://Shuryne.github.io/posts/%E6%9D%82%E7%9A%84%E6%96%87/%E5%85%B3%E4%BA%8E%E5%BC%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E4%B8%80%E7%82%B9%E6%83%B3%E6%B3%95/">
+        <span class="title">Next Page »</span>
+        <br>
+        <span>关于强人工智能的一些想法</span>
+      </a>
+    </nav>
+  </footer>
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2021 <a href="https://Shuryne.github.io">Shuryne</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+
+
+<script defer src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>
