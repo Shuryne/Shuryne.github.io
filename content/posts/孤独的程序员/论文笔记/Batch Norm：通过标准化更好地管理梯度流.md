@@ -1,0 +1,53 @@
+---
+ShowBreadCrumbs: false
+TocOpen: false
+author: Shuryne
+categories:
+- 孤独的程序员
+date: 2021-06-27
+description: ''
+draft: true
+isCJKLanguage: true
+searchHidden: false
+showToc: false
+tags:
+- 论文笔记
+title: Batch Norm：通过标准化更好地管理梯度流
+weight: 100
+---
+
+> 基于反向传播的神经网络，如何管理梯度流是训练的关键
+
+<!--more-->
+
+论文地址: [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/pdf/1502.03167.pdf)
+
+
+
+### 1. 出发点
+
+解决神经网络训练困难的问题：多层神经网络中，每层的输出数据分布都是不一样的。特别地，当前面层的参数发生变化时，后面每一层的输出分布都会发生变化，导致网络需要不断学习新的分布。往往使得训练时只好使用较低的学习率和精细的参数初始化才可能训的好。这种现象称为`internal covariate shift`。
+
+
+
+### 2. 怎么做
+
+全局白化代价昂贵且不是全局可导，因此做了两个必要假设：
+1. 直接简单的标准化数据分布，会限制网络表征能力，因此为了增强每层网络的表征能力，将标准化后的分布进行一次线性变换，每层BN的线性变换参数是相同的，随网络参数一起进行训练优化
+1. 为了适配`SGD`算法，使`用mini-batch`的均值方差来估计样本总体的均值方差
+
+模型`inference`期间，`BN`层的均值方差用训练集的整体样本均值方差替代，而不是用`inference data`的均值方差
+
+
+
+### 3. 使用`Batch Norm`的优势
+
+1. 能使用更高的学习率，减少参数初始化的人工成本，更好地管理梯度流，缓解梯度消失：神经网络每层输出经过`Sigmoid`之类的激活函数，输入值在零附近的出来的梯度会比较好，`BN`使得输入分布在零附近，会获得比较好的梯度值，缓解梯度消失，也能使用较高学习率进行训练
+1. 能起到正则化缓解过拟合的效果，减少dropout的使用: 每个`batch`内的均值方差和全部数据的均值方差之间存在噪声偏差，从而给模型训练引入一定的噪声，增强泛化能力
+1. 加速模型收敛：没有进行`BN`的输入`feature`对结果的影响是不一样的，导致`loss`收敛较慢，`BN`使得不同的`feature`对于结果的收敛影响是基本一致的，从而加快模型收敛
+
+
+
+### 4. 总结
+
+CV领域一篇经典论文，读来非常有意思，表述清晰，结构完整，给NLP领域的前沿发展也带来不少启示，值得精读。

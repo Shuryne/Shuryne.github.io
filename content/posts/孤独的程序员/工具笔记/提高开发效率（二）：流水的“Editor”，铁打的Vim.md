@@ -1,0 +1,42 @@
+---
+ShowBreadCrumbs: false
+TocOpen: false
+author: Shuryne
+categories:
+- 孤独的程序员
+date: 2019-11-16
+description: ''
+draft: true
+isCJKLanguage: true
+searchHidden: false
+showToc: false
+tags:
+- 工具笔记
+- Vim
+title: 提高开发效率（二）：流水的“Editor”，铁打的Vi
+weight: 100
+---
+
+### Vim的哲学
+
+
+
+
+
+### 常用命令
+
+
+
+
+
+### 使用场景
+
+#### 1. 代码开发
+
+基本上使用`Vim`进行代码编辑已经成了大多数程序员的操作习惯，因为使用`Vim`能够大量减少鼠标使用，并通过各种快捷键提高键入效率，但其具备一定的学习成本，需要记忆较多快捷键。长期来看，使用`Vim`进行代码编辑还是颇有收益的。
+
+#### 2. 日常写作
+
+笔者很多知识性的总结、笔记、文章等都需要使用`markdown`快速编辑，因此如何编辑以及统一管理`markdown`成了一个问题。大学期间最开始使用`Typora`写文档笔记作业等，后来发现使用`Typora`编辑后的`markdown`源文件存在格式规范混乱问题，如，于是尝试了很多其他编辑软件之后，但最后还是回到了`Typora`
+
+看到同事使用`Vim`进行代码的开发、
