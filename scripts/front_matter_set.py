@@ -17,7 +17,7 @@ PostMetadataTemplate = {
     'description': '',          # 文章描述 默认为空
 
     'date': None,               # 文章创建时间 创建新文章时的必填项
-    'draft': True,              # 是否是草稿 默认是可发布文章
+    'draft': False,             # 是否是草稿 默认是可发布文章
     'weight': 100,              # 文章权重 默认标准100点
     'isCJKLanguage': True,      # 是否包含中、日、韩文字 方便显示文章摘要
     

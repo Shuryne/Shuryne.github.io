@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>提高开发效率（四）：拥抱服务器开发 | Shuryne</title>
+
+<meta name="keywords" content="工具笔记" />
+<meta name="description" content="SSH免密登录 本地.ssh/config中配置相关账号端口信">
+<meta name="author" content="Shuryne">
+<link rel="canonical" href="https://Shuryne.github.io/posts/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E5%9B%9B%E6%8B%A5%E6%8A%B1%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/" />
+<link href="/assets/css/stylesheet.min.599b0e9ad02d274d3cb655359f597ea4ffb4913107f886d7b6869ff79a84a726.css" integrity="sha256-WZsOmtAtJ008tlU1n1l&#43;pP&#43;0kTEH&#43;IbXtoaf95qEpyY=" rel="preload stylesheet"
+    as="style">
+
+<link rel="icon" href="https://Shuryne.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://Shuryne.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://Shuryne.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://Shuryne.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://Shuryne.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.81.0" />
+
+
+<meta property="og:title" content="提高开发效率（四）：拥抱服务器开发" />
+<meta property="og:description" content="SSH免密登录 本地.ssh/config中配置相关账号端口信" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Shuryne.github.io/posts/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E5%9B%9B%E6%8B%A5%E6%8A%B1%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/" />
+<meta property="og:image" content="https://Shuryne.github.io/papermod-cover.png"/>
+<meta property="article:published_time" content="2021-06-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-06-16T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://Shuryne.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="提高开发效率（四）：拥抱服务器开发"/>
+<meta name="twitter:description" content="SSH免密登录 本地.ssh/config中配置相关账号端口信"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://Shuryne.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "提高开发效率（四）：拥抱服务器开发",
+      "item": "https://Shuryne.github.io/posts/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E5%9B%9B%E6%8B%A5%E6%8A%B1%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "提高开发效率（四）：拥抱服务器开发",
+  "name": "提高开发效率（四）：拥抱服务器开发",
+  "description": "SSH免密登录 本地.ssh/config中配置相关账号端口信",
+  "keywords": [
+    "工具笔记"
+  ],
+  "articleBody": "SSH免密登录  本地.ssh/config中配置相关账号端口信息 将公钥写到远程主机：ssh-copy-id username@ip  GPU环境配置  conda创建环境：conda create -n py36 python=3.6 安装torch以及transformers等包，推荐使用可复用的install.sh脚本离线统一配置  Docker 开发 docker编译流程  指定操作系统，如ubuntu等: From ubuntu ... 安装必要的一些工具: Run apt-get...,  Run wget... 复制项目文件(包括模型等)到docker中: copy ./* - ./ 安装项目所需工具和包: pip install -r requriment.txt 指定docker运行时的命令(启动时执行./entrypoint.sh …): command [...]  cuda  基于C++的调用底层驱动包 结构图  graph TD; nvidia-driver -- |调用硬件| GPU(Tesla etc) cuda -- |调用| nvidia-driver torch等高级包 -- |调用| cuda conda  结构上是python+环境管理的包(conda) anaconda在conda基础上添加了numpy、jupyter等科学计算的包  Tmux 推荐博客：Tmux使用手册\n优势：对比nohup，tmux有其独到的优势，如能够同时开多个后台运行程序等\n常用命令 开发中常用到的几个命令和踩坑，在此贴一下\n# 新建会话 tmux new -s demo # 关闭会话 tmux kill-session -t demo # 进入会话 tmux a -t demo # tmux内使用滚动：Ctrl + b，键入set -g mouse on # tmux内使用选中复制：按住alt再选中即可复制选中内容 ",
+  "wordCount" : "528",
+  "inLanguage": "en",
+  "datePublished": "2021-06-16T00:00:00Z",
+  "dateModified": "2021-06-16T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Shuryne"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://Shuryne.github.io/posts/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E5%9B%9B%E6%8B%A5%E6%8A%B1%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuryne",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://Shuryne.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://Shuryne.github.io" accesskey="h" title="Shuryne (Alt + H)">Shuryne</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                
+                
+            </span>
+        </div>
+        <ul id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="https://Shuryne.github.io/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Shuryne.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Shuryne.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://Shuryne.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li></ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+
+    <h1 class="post-title">
+      提高开发效率（四）：拥抱服务器开发
+    </h1>
+    <div class="post-meta">
+
+June 16, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Shuryne
+
+</div>
+  </header> 
+
+  <div class="toc">
+    <details >
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">Table of Contents</div>
+      </summary>
+      <div class="inner"><ul><li>
+        <a href="#ssh%e5%85%8d%e5%af%86%e7%99%bb%e5%bd%95" aria-label="SSH免密登录">SSH免密登录</a></li><li>
+        <a href="#gpu%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae" aria-label="GPU环境配置">GPU环境配置</a></li><li>
+        <a href="#docker-%e5%bc%80%e5%8f%91" aria-label="Docker 开发">Docker 开发</a><ul>
+            <li>
+        <a href="#docker%e7%bc%96%e8%af%91%e6%b5%81%e7%a8%8b" aria-label="docker编译流程">docker编译流程</a></li><li>
+        <a href="#cuda" aria-label="cuda">cuda</a></li><li>
+        <a href="#conda" aria-label="conda">conda</a></li></ul>
+    </li><li>
+        <a href="#tmux" aria-label="Tmux">Tmux</a></li><li>
+        <a href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4" aria-label="常用命令">常用命令</a></li></ul>
+      </div>
+    </details>
+  </div>
+  <div class="post-content">
+<h3 id="ssh免密登录">SSH免密登录<a hidden class="anchor" aria-hidden="true" href="#ssh免密登录">#</a></h3>
+<ol>
+<li>本地<code>.ssh/config</code>中配置相关账号端口信息</li>
+<li>将公钥写到远程主机：<code>ssh-copy-id username@ip</code></li>
+</ol>
+<h3 id="gpu环境配置">GPU环境配置<a hidden class="anchor" aria-hidden="true" href="#gpu环境配置">#</a></h3>
+<ol>
+<li>conda创建环境：<code>conda create -n py36 python=3.6</code></li>
+<li>安装torch以及transformers等包，推荐使用可复用的<code>install.sh</code>脚本离线统一配置</li>
+</ol>
+<h3 id="docker-开发">Docker 开发<a hidden class="anchor" aria-hidden="true" href="#docker-开发">#</a></h3>
+<h4 id="docker编译流程">docker编译流程<a hidden class="anchor" aria-hidden="true" href="#docker编译流程">#</a></h4>
+<ol>
+<li>指定操作系统，如ubuntu等: <code>From ubuntu ...</code></li>
+<li>安装必要的一些工具: <code>Run apt-get...</code>, <code> Run wget...</code></li>
+<li>复制项目文件(包括模型等)到docker中: <code>copy ./* -&gt; ./</code></li>
+<li>安装项目所需工具和包: <code>pip install -r requriment.txt</code></li>
+<li>指定docker运行时的命令(启动时执行./entrypoint.sh &hellip;): <code>command [...]</code></li>
+</ol>
+<h4 id="cuda">cuda<a hidden class="anchor" aria-hidden="true" href="#cuda">#</a></h4>
+<ol>
+<li>基于C++的调用底层驱动包</li>
+<li>结构图</li>
+</ol>
+<pre><code class="language-mermaid" data-lang="mermaid">graph TD;
+    nvidia-driver --&gt; |调用硬件| GPU(Tesla etc)
+    cuda --&gt; |调用| nvidia-driver
+    torch等高级包 --&gt; |调用| cuda
+</code></pre><h4 id="conda">conda<a hidden class="anchor" aria-hidden="true" href="#conda">#</a></h4>
+<ol>
+<li>结构上是python+环境管理的包(conda)</li>
+<li>anaconda在conda基础上添加了numpy、jupyter等科学计算的包</li>
+</ol>
+<h3 id="tmux">Tmux<a hidden class="anchor" aria-hidden="true" href="#tmux">#</a></h3>
+<p>推荐博客：<a href="http://louiszhai.github.io/2017/09/30/tmux" title="Tmux">Tmux使用手册</a></p>
+<p>优势：对比nohup，tmux有其独到的优势，如能够同时开多个后台运行程序等</p>
+<h3 id="常用命令">常用命令<a hidden class="anchor" aria-hidden="true" href="#常用命令">#</a></h3>
+<p>开发中常用到的几个命令和踩坑，在此贴一下</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 新建会话</span>
+tmux new -s demo
+
+<span style="color:#75715e"># 关闭会话</span>
+tmux kill-session -t demo
+
+<span style="color:#75715e"># 进入会话</span>
+tmux a -t demo
+
+<span style="color:#75715e"># tmux内使用滚动：Ctrl + b，键入set -g mouse on</span>
+<span style="color:#75715e"># tmux内使用选中复制：按住alt再选中即可复制选中内容</span>
+</code></pre></div>
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://Shuryne.github.io/tags/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/">工具笔记</a></li>
+    </ul>
+    <nav class="paginav">
+      <a class="prev" href="https://Shuryne.github.io/posts/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E6%8C%A8%E6%9C%80%E6%AF%92%E7%9A%84%E6%89%93%E5%86%99%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81/">
+        <span class="title">« Prev Page</span>
+        <br>
+        <span>挨最毒的打，写更好的代码</span>
+      </a>
+      <a class="next" href="https://Shuryne.github.io/posts/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%E4%B8%89%E5%A5%BD%E7%94%A8%E7%9A%84pycharm/">
+        <span class="title">Next Page »</span>
+        <br>
+        <span>提高开发效率（三）：好用的Pychar</span>
+      </a>
+    </nav>
+  </footer>
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2021 <a href="https://Shuryne.github.io">Shuryne</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+
+
+<script defer src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>

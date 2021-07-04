@@ -6,7 +6,7 @@ categories:
 - 孤独的程序员
 date: 2018-11-12
 description: ''
-draft: true
+draft: false
 isCJKLanguage: true
 searchHidden: false
 showToc: false

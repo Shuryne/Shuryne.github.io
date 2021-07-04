@@ -7,7 +7,7 @@ categories:
 - 孤独的程序员
 date: 2020-07-19
 description: ''
-draft: true
+draft: false
 isCJKLanguage: true
 searchHidden: false
 showToc: false
