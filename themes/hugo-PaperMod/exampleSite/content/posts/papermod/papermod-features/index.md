@@ -68,10 +68,10 @@ Create a page with `archive.md` in `content` directory with following content
 
 ```shell
 .
-├── config.yml
+├── config_papermod.yml
 ├── content/
 │   ├── archives.md   <--- Create archive.md here
-│   └── posts/
+│   └── post/
 ├── static/
 └── themes/
     └── PaperMod/

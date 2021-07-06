@@ -1,5 +1,7 @@
 import shutil
 import os
+import re
+
 import frontmatter
 from tqdm import tqdm
 
@@ -8,26 +10,15 @@ from tqdm import tqdm
 OriginDirPath = os.path.abspath('./scripts/posts_origin')
 
 # 补全 Front Matter 之后的文章地址
-DumpDirPath = os.path.abspath('./content/posts')
+DumpDirPath = os.path.abspath('./content/post')
 
 # 文章 Front Matter 配置模版
 PostMetadataTemplate = {
     'title': '',                # 文章标题 默认使用md文件名
-    'author': 'Shuryne',        # 作者 默认Shuryne
-    'description': '',          # 文章描述 默认为空
-
     'date': None,               # 文章创建时间 创建新文章时的必填项
     'draft': False,             # 是否是草稿 默认是可发布文章
-    'weight': 100,              # 文章权重 默认标准100点
-    'isCJKLanguage': True,      # 是否包含中、日、韩文字 方便显示文章摘要
-    
     'categories': [],           # 目录分类 默认使用文章一级目录
     'tags': [],                 # 标签分类 默认使用文章二级目录 可添加其他值
-
-    'showToc': False,           # 是否显示大纲
-    'TocOpen': False,           # 是否展开大纲
-    'ShowBreadCrumbs': False,   # 
-    'searchHidden': False       #
 }
 
 # md文件中必填的Key
@@ -91,23 +82,28 @@ def front_matter_set(blog_dir: str):
                 for key in RequiredKey:
                     assert key in post.metadata
 
+                # print('article_name', article_name)
                 # step 1: generate and override front matter
                 metadata = PostMetadataTemplate.copy()
+                # metadata = post.metadata
                 metadata.update({
-                    'title': article_name.strip('.md'),
+                    'title': re.sub(r'\.md$', '', article_name),
                     'categories': [first_category_name],
                     'tags': [second_category_name],
                 })
                 for k, v in post.metadata.items():
-                    if k in ['categories', 'tags']:
-                        metadata[k] += v
-                    else:
-                        metadata[k] = v
-                post.metadata.update(metadata)
+                    metadata[k] = v
+                    # if k in ['categories', 'tags']:
+                    #     metadata[k] += v
+                    # else:
+                    #     metadata[k] = v
+                post.metadata = metadata
                 # print(post.metadata)
 
                 # step 3: remove dir and dump to new file
                 dump_file = open(os.path.join(dump_dir, article_name), 'wb+')
+                # dump阶段 front matter包会按key进行sort输出
+                # 此处为了保证格式正确 修改了包的底层代码 按照template的顺序输出结果
                 frontmatter.dump(post, dump_file)
                 dump_file.close()
 
@@ -119,6 +115,9 @@ def main():
     # print(os.path.abspath('./content/posts_origin'))
     # print(os.path.abspath('./scripts/posts_origin'))
     front_matter_set(OriginDirPath)
+    # data_path = '/Users/gungnir/Google/hugo-blog/scripts/posts_origin/无聊的幻想家/杂的文/随想——一二九.md'
+    # post = frontmatter.load(data_path)
+    # print(post.content)
 
 
 if __name__ == '__main__':

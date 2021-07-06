@@ -48,7 +48,7 @@ languages:
             subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
             buttons:
                 - name: Blog
-                  url: posts
+                  url: post
                 - name: Tags
                   url: tags
         menu:

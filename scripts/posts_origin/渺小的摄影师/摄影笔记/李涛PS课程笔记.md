@@ -1,7 +1,5 @@
 ---
 date: 2017-08-07
-
-tags: ["Photoshop"]
 ---
 
 

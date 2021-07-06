@@ -165,7 +165,7 @@ params:
         imageTitle: my image
         buttons:
             - name: Posts
-              url: posts
+              url: post
             - name: Tags
               url: tags
 

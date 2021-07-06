@@ -4,7 +4,7 @@ date: 2018-11-12
 
 
 
-> 关于Seq2Seq和Transformer
+关于Seq2Seq和Transformer
 
 <!--more-->
 
