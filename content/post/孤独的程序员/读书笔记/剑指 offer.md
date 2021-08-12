@@ -1,11 +1,11 @@
 ---
-title: 剑指offer笔记
+title: 剑指offer
 date: 2020-03-24
 draft: true
 categories:
 - 孤独的程序员
 tags:
-- 笔记
+
 ---
 
 《剑指offer》笔记

@@ -23,6 +23,10 @@ tags:
 
 
 
+参考资料
+
+
+
 [1]:https://spaces.ac.cn/usr/uploads/2017/04/146269300.pdf "Deep Learning 实战之 word2vec"
 [2]:https://arxiv.org/pdf/1310.4546.pdf "Distributed Representations of Words and Phrases and their Compositionality"
 [3]:https://arxiv.org/pdf/1301.3781.pdf "Efficient Estimation of Word Representations in Vector Space"

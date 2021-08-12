@@ -8,9 +8,7 @@ tags:
 - Git
 ---
 
-
-
-Git在工作中非常重要
+使用Git开发过程中踩过的坑
 
 <!--more-->
 
@@ -99,8 +97,6 @@ git rebase --continue / git rebase --abort
 # 推送到远端feature分支
 git push -u origin feature
 ```
-
-
 
 ### 2. 基于远端master进行rebase
 
