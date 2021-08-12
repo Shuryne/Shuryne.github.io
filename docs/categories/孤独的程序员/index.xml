@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>孤独的程序员 on Shuryne</title>
+    <link>https://Shuryne.github.io/categories/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
+    <description>Recent content in 孤独的程序员 on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/categories/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多标签分类问题的一个“临时解决方案”</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%A4%9A%E6%A0%87%E7%AD%BE%E5%88%86%E7%B1%BB/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%A4%9A%E6%A0%87%E7%AD%BE%E5%88%86%E7%B1%BB/</guid>
+      <description>&lt;p&gt;最近一年来接触了不少算法项目，经常遇到多标签分类问题，尝试了一些方案，效果平平，起色甚微，常感困惑，苦于没有寻到一种“放之四海而皆准”通用解决方案，导致每次都需要重新设计feature提升效果，费时费力。念念不忘，必有回响，最近蹭工作闲暇之余粗略调研了一些目前学术界和工业界的相关解决方法，并在此记录这次暂不成熟的调研结果。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>深刻的Boosting</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%88%BB%E7%9A%84boosting/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%88%BB%E7%9A%84boosting/</guid>
+      <description>&lt;p&gt;Boosting是一种常见的集成学习方法，看似简单的模型组合，其背后蕴含着深刻的算法思想&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Youtube的推荐系统是如何炼成的</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recommandation/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recommandation/</guid>
+      <description>&lt;p&gt;2016年，Google在《&lt;a href=&#34;https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/45530.pdf&#34;&gt;Deep Neural Networks for YouTube Recommendations&lt;/a&gt;》中开源的Youtube的推荐系统架构，堪称经典推荐系统工业落地典范&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Batch Norm：通过标准化更好地管理梯度流</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch-norm/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch-norm/</guid>
+      <description>&lt;p&gt;基于反向传播的神经网络，如何管理梯度流是训练的关键&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关键词抽取这件“小事”</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/</guid>
+      <description>&lt;p&gt;关键词抽取，看似一件简单的小事，事实上目前的效果并不乐观&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>挨最毒的打，写更好的代码</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%86%99%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%86%99%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81/</guid>
+      <description>&lt;p&gt;不断锻炼自己的代码能力&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率（四）：拥抱服务器开发</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/</guid>
+      <description>&lt;p&gt;服务器开发时的环境配置和开发工具&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率（三）：好用的Pycharm</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-pycharm/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-pycharm/</guid>
+      <description>&lt;p&gt;记录并积累自己的PyCharm使用习惯&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率（零）：科学上网的正确姿势</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+      <description>&lt;p&gt;记录那些年自己使用过的梯子&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率（一）：正确使用Git</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-git/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-git/</guid>
+      <description>&lt;p&gt;使用Git开发过程中踩过的坑&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ConvSeq2Seq</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/convseq2seq/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/convseq2seq/</guid>
+      <description>&lt;p&gt;《 Convolutional Sequence to Sequence Learning》&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NLP基石：Transformer</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/transformer/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/transformer/</guid>
+      <description>&lt;p&gt;2017年底，准确的说是11月，是计算机人工智能领域一个重要的时间节点。因为在那个时候，论文《&lt;a href=&#34;https://arxiv.org/pdf/1706.03762.pdf&#34; title=&#34;Attention is all you need&#34;&gt;Attention Is All You Need&lt;/a&gt;》发布了。Transformer的发布，为NLP领域新的研究范式（预训练+微调）奠定了基础，也成为了人工智能众多领域的一大基石，成千上万的前沿研究或多或少都能在浮光掠影中发现它的身影。&lt;/p&gt;
+&lt;p&gt;这篇论文也是我入坑NLP以来阅读和翻阅次数最多的论文，无论是阅读Transformer-based的相关论文和文章、魔改模型、算法面试、还是遇到Attention相关的问题，总会回到这篇经典论文。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>机器翻译：Seq2Seq</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/seq2seq/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/seq2seq/</guid>
+      <description>&lt;p&gt;关于Seq2Seq&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>深刻的Boosting - Shuryne</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="" /><meta name="description" content="Boosting是一种常见的集成学习方法，看似简单的模型组合，其背后蕴含着深刻的算法思想
+" /><meta name="keywords" content="Blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.81.0 with theme even" />
+
+
+<link rel="canonical" href="https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%88%BB%E7%9A%84boosting/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.5f09d4f23f442ea60131fd8558e1bef4b9e70e968a463bdc11211636f64e5950.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="深刻的Boosting" />
+<meta property="og:description" content="Boosting是一种常见的集成学习方法，看似简单的模型组合，其背后蕴含着深刻的算法思想" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%88%BB%E7%9A%84boosting/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-01T00:00:00&#43;00:00" />
+
+<meta itemprop="name" content="深刻的Boosting">
+<meta itemprop="description" content="Boosting是一种常见的集成学习方法，看似简单的模型组合，其背后蕴含着深刻的算法思想"><meta itemprop="datePublished" content="2021-08-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-08-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1780">
+<meta itemprop="keywords" content="Boosting," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="深刻的Boosting"/>
+<meta name="twitter:description" content="Boosting是一种常见的集成学习方法，看似简单的模型组合，其背后蕴含着深刻的算法思想"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Shuryne</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Shuryne</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">深刻的Boosting</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-08-01 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/"> 孤独的程序员 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#从boosting到adaboost">从Boosting到AdaBoost</a></li>
+        <li><a href="#从adaboost到神经网络">从AdaBoost到神经网络</a>
+          <ul>
+            <li><a href="#1-残差学习">1. 残差学习</a></li>
+            <li><a href="#2-特征工程">2. 特征工程</a></li>
+            <li><a href="#3-模型训练">3. 模型训练</a></li>
+          </ul>
+        </li>
+        <li><a href="#总结">总结</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>Boosting是一种常见的集成学习方法，看似简单的模型组合，其背后蕴含着深刻的算法思想</p>
+<h2 id="从boosting到adaboost">从Boosting到AdaBoost</h2>
+<p>Boosting学习是一种组合学习算法，也代表着一种组合学习的思想，AdaBoosting是其算法思想的一种实现。</p>
+<p>关于AdaBoost算法的资料有很多，质量相对高的有李航的《统计学习方法》和国外的《PRML》，其中都包含了完整的算法理论推导，网络上也有很多文章解读。并且通过复杂度分析证明了在弱基础模型准确率严格比随机好的条件下，整体错误率将指数下降趋于零。</p>
+<p>其算法核心思想是：<span style="color:red;">用不同权重的数据训练不同弱基础模型，通过弱基础模型的误差率构造相应的模型权重，通过若干弱基础模型的线性加权组合得到最终的模型。</span></p>
+<p>算法核心有三点值得注意：</p>
+<ol>
+<li>数据样本权重：每次训练弱基础模型后都需要根据当前模型结果更新数据权重（训练第一个模型时设置样本权重平均分配），即将对当前模型来说较难的数据样本的权重加大，相应地，降低较简单数据样本的权重，这样保证了每次新的弱基础模型都是针对性地对整体较弱的部分进行强化训练，从而更高效地发挥出组合学习的优势（相对于不引入样本权重的方式来说）。</li>
+<li>弱基础模型权重：通过弱基础模型的错误率自动构建其模型权重，减少了人为经验的“干扰”，并具备坚实的数学理论基础。</li>
+<li>线性加权组合：将不同弱基础模型的结果视为“高阶特征”，进一步对这些“高阶特征”放入一个线性模型中，在一定程度上实现了“端到端”的自动化特征工程的效果。</li>
+</ol>
+<h2 id="从adaboost到神经网络">从AdaBoost到神经网络</h2>
+<p>苏剑林在<a href="https://kexue.fm/archives/3873">博文</a>中也谈到了AdaBoost和神经网络之间的联系，核心观点是AdaBoost和神经网络之间的异曲同工之妙在于都利用上一层“模型”结果作为新特征，并输入下一层“模型”进行训练。本文则增加了另外的视角来具体对比二者之间的联系与区别。</p>
+<h3 id="1-残差学习">1. 残差学习</h3>
+<p>残差学习火于何恺明大神的一篇论文《<a href="https://arxiv.org/abs/1512.03385" title="ResNet">Deep Residual Learning for Image Recognition</a>》，也是目前为止Google Scholar Metric 2020引用量最高的论文，原文如下：</p>
+<blockquote>
+<p>My paper on Deep Residual Networks (ResNets) is the most cited paper in all areas in <a href="https://scholar.google.com/citations?view_op=top_venues&amp;hl=en">Google Scholar Metrics</a> 2020.</p>
+</blockquote>
+<p>这篇论文通过对模型训练深入的研究，提出深度残差连接网络，极大地优化了梯度流的管理，从而在神经网络的训练效率和效果上，都取得了极大的进步。（单就这篇论文，就值得认真研读单独写上几篇了，日后再说吧）</p>
+<p>回到AdaBoost，其引入数据样本权重序列化训练不同弱基础模型，也体现了残差学习的思想，不过这里的残差应视为根据当前模型结果更新数据样本权重后的全部数据，也成为了下一弱基础模型学习的目标，体现出若干模型序列化学习“残差“的效果。</p>
+<p>值得一提的是，在GBDT用决策树作为弱基础模型处理回归问题时，残差定义为当前整体回归结果和真实值之间的差值，这更加明确地体现了残差学习的思想。</p>
+<h3 id="2-特征工程">2. 特征工程</h3>
+<p>从神经网络视角来看，可以将AdaBoost近似看作一个<span style="color:red;">不加激活函数的端到端三层线性神经网络</span>：</p>
+<ul>
+<li>
+<p>输入层：原始数据输入层，节点数是数据样本个数。</p>
+</li>
+<li>
+<p>中间层：全连接层，不加激活函数，中间层的节点数就是弱基础模型个数，层参数对应着数据样本权重；虽然形式上很类似，但和真正的神经网络还是有一定的区别。一般的神经网络中，上一层数据是并行加权乘上权重走到当前层，当前层的所有节点相对独立，没有序列关系，而AdaBoost的各弱基础模型是具备一定的序列关系的，即当前弱基础模型的训练数据和上一弱基础模型密切相关。</p>
+</li>
+<li>
+<p>输出层：输出节点数为1的全连接层，不加激活函数，层参数对应着不同弱基础模型的权重。</p>
+</li>
+</ul>
+<h3 id="3-模型训练">3. 模型训练</h3>
+<p>二者的模型训练方式都是通过对监督信号计算损失值，然后迭代更新权重，只不过监督方式和更新方式各有千秋。神经网络利用loss function（分类一般用cross entropy）+反向传播，训练完mini-batch后一次性更新所有参数，每个参数更新次数为mini-batch数量。而AdaBoost直接利用整体样本的错误率更新数据权重和模型权重，但只更新当前权重，属于序列化更新，一次只更新部分参数且不重叠，每个参数只更新一次，训练完成所有参数就全部更新完成，</p>
+<h2 id="总结">总结</h2>
+<p>本文从Boosting出发，浅析其背后深刻的思想，并对Boosting和神经网络之间的联系和区别做了一些简要的分析，便于感性上获得从组合学习的角度去理解神经网络、从神经网络层次化特征的角度去理解AdaBoost算法的进一步认识。</p>
+<p><strong>参考资料</strong></p>
+<ol>
+<li><a href="https://kexue.fm/archives/3873">科学空间</a></li>
+<li><a href="https://arxiv.org/abs/1512.03385" title="ResNet">ResNet Paper</a></li>
+</ol>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/boosting/">Boosting</a>
+          </div>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div>
+    <div align="center">
+        Abandon Everything And Regain Freedom
+    </div>
+</div>
+
+<div>
+    <p></p>
+</div>
+
+<div class="social-links">
+      <a href="https://github.com/Shuryne" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.douban.com/people/151765782" class="iconfont icon-douban" title="douban"></a>
+</div>
+
+<div>
+    <p><br/></p>
+</div>
+
+
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

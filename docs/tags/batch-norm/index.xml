@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>batch norm on Shuryne</title>
+    <link>https://Shuryne.github.io/tags/batch-norm/</link>
+    <description>Recent content in batch norm on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/tags/batch-norm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Batch Norm：通过标准化更好地管理梯度流</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch-norm/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch-norm/</guid>
+      <description>&lt;p&gt;基于反向传播的神经网络，如何管理梯度流是训练的关键&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

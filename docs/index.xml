@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shuryne</title>
+    <link>https://Shuryne.github.io/</link>
+    <description>Recent content on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多标签分类问题的一个“临时解决方案”</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%A4%9A%E6%A0%87%E7%AD%BE%E5%88%86%E7%B1%BB/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%A4%9A%E6%A0%87%E7%AD%BE%E5%88%86%E7%B1%BB/</guid>
+      <description>&lt;p&gt;最近一年来接触了不少算法项目，经常遇到多标签分类问题，尝试了一些方案，效果平平，起色甚微，常感困惑，苦于没有寻到一种“放之四海而皆准”通用解决方案，导致每次都需要重新设计feature提升效果，费时费力。念念不忘，必有回响，最近蹭工作闲暇之余粗略调研了一些目前学术界和工业界的相关解决方法，并在此记录这次暂不成熟的调研结果。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>深刻的Boosting</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%88%BB%E7%9A%84boosting/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%88%BB%E7%9A%84boosting/</guid>
+      <description>&lt;p&gt;Boosting是一种常见的集成学习方法，看似简单的模型组合，其背后蕴含着深刻的算法思想&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Youtube的推荐系统是如何炼成的</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recommandation/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recommandation/</guid>
+      <description>&lt;p&gt;2016年，Google在《&lt;a href=&#34;https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/45530.pdf&#34;&gt;Deep Neural Networks for YouTube Recommendations&lt;/a&gt;》中开源的Youtube的推荐系统架构，堪称经典推荐系统工业落地典范&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Batch Norm：通过标准化更好地管理梯度流</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch-norm/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch-norm/</guid>
+      <description>&lt;p&gt;基于反向传播的神经网络，如何管理梯度流是训练的关键&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关键词抽取这件“小事”</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/</guid>
+      <description>&lt;p&gt;关键词抽取，看似一件简单的小事，事实上目前的效果并不乐观&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于强人工智能的一点想法</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E6%9D%82%E7%9A%84%E6%96%87/%E9%9A%8F%E6%83%B3-%E5%BC%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E6%9D%82%E7%9A%84%E6%96%87/%E9%9A%8F%E6%83%B3-%E5%BC%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</guid>
+      <description>通往强人工智能的道路上，必将经历两个阶段，正如LBB在知乎中说到的一样，大规模和多模态阶段。 认识到强人工智能必将需要巨量算力的支持这一点并不困难，因为人类本身的大脑就具备巨量运算的特点，如果没有与之相</description>
+    </item>
+    
+    <item>
+      <title>挨最毒的打，写更好的代码</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%86%99%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%86%99%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81/</guid>
+      <description>&lt;p&gt;不断锻炼自己的代码能力&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率（四）：拥抱服务器开发</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%8F%91/</guid>
+      <description>&lt;p&gt;服务器开发时的环境配置和开发工具&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率（三）：好用的Pycharm</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-pycharm/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-pycharm/</guid>
+      <description>&lt;p&gt;记录并积累自己的PyCharm使用习惯&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>梦境中的回忆</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E6%9D%82%E7%9A%84%E6%96%87/%E6%A2%A6%E5%A2%83%E4%B8%AD%E7%9A%84%E5%9B%9E%E5%BF%86/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E6%9D%82%E7%9A%84%E6%96%87/%E6%A2%A6%E5%A2%83%E4%B8%AD%E7%9A%84%E5%9B%9E%E5%BF%86/</guid>
+      <description>香樟树 香樟树小道有很多香樟树，并排在路两旁，我数过，每排17根。 道路是那种笔直的上坡路，倾角大概30度，朝向西。 每天正午之后，阳光透过树叶缝隙洒下来，叶子也变得晶莹剔透。 “你知道吗，中学的时候我就喜欢</description>
+    </item>
+    
+    <item>
+      <title>用iphone也能拍好照片吗？</title>
+      <link>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/iphone%E6%91%84%E5%BD%B1/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/iphone%E6%91%84%E5%BD%B1/</guid>
+      <description>&lt;p&gt;用简单的iphone能拍出好照片&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>职场工作心得</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E6%9D%82%E7%9A%84%E6%96%87/%E8%81%8C%E5%9C%BA%E5%B7%A5%E4%BD%9C%E5%BF%83%E5%BE%97/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E6%9D%82%E7%9A%84%E6%96%87/%E8%81%8C%E5%9C%BA%E5%B7%A5%E4%BD%9C%E5%BF%83%E5%BE%97/</guid>
+      <description>经验心得 善用工具（pycharm等），人类发明工具是为了提高效率 多做可复用性工作，少做一次性工作 分清主次，划分好优先级能够规划好绝大多数任务 天下熙熙皆为利来，天下攘攘皆为利往，职场没有永远的敌人，也没</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率（零）：科学上网的正确姿势</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+      <description>&lt;p&gt;记录那些年自己使用过的梯子&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高开发效率（一）：正确使用Git</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-git/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-git/</guid>
+      <description>&lt;p&gt;使用Git开发过程中踩过的坑&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一个摄影小讲座</title>
+      <link>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/%E6%91%84%E5%BD%B1%E5%B0%8F%E8%AE%B2%E5%BA%A7/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/%E6%91%84%E5%BD%B1%E5%B0%8F%E8%AE%B2%E5%BA%A7/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;一个简单的摄影讲座&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何像B站UP主一样拍视频</title>
+      <link>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/%E6%8B%8D%E8%A7%86%E9%A2%91/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/%E6%8B%8D%E8%A7%86%E9%A2%91/</guid>
+      <description>&lt;p&gt;想拍画面干净的视频&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ConvSeq2Seq</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/convseq2seq/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/convseq2seq/</guid>
+      <description>&lt;p&gt;《 Convolutional Sequence to Sequence Learning》&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NLP基石：Transformer</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/transformer/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/transformer/</guid>
+      <description>&lt;p&gt;2017年底，准确的说是11月，是计算机人工智能领域一个重要的时间节点。因为在那个时候，论文《&lt;a href=&#34;https://arxiv.org/pdf/1706.03762.pdf&#34; title=&#34;Attention is all you need&#34;&gt;Attention Is All You Need&lt;/a&gt;》发布了。Transformer的发布，为NLP领域新的研究范式（预训练+微调）奠定了基础，也成为了人工智能众多领域的一大基石，成千上万的前沿研究或多或少都能在浮光掠影中发现它的身影。&lt;/p&gt;
+&lt;p&gt;这篇论文也是我入坑NLP以来阅读和翻阅次数最多的论文，无论是阅读Transformer-based的相关论文和文章、魔改模型、算法面试、还是遇到Attention相关的问题，总会回到这篇经典论文。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>机器翻译：Seq2Seq</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/seq2seq/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/seq2seq/</guid>
+      <description>&lt;p&gt;关于Seq2Seq&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一些有趣的摄影idea</title>
+      <link>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/%E6%91%84%E5%BD%B1idea/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/%E6%91%84%E5%BD%B1idea/</guid>
+      <description>&lt;p&gt;待实践的摄影idea&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>活着</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E6%B4%BB%E7%9D%80/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E6%B4%BB%E7%9D%80/</guid>
+      <description>&lt;p&gt;人对苦难的承受能力往往超乎想象，对世界乐观的态度同样如此&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>我来了129，才发现自己并不是一无所有</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E6%9D%82%E7%9A%84%E6%96%87/%E9%9A%8F%E6%83%B3%E4%B8%80%E4%BA%8C%E4%B9%9D/</link>
+      <pubDate>Sat, 09 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E6%9D%82%E7%9A%84%E6%96%87/%E9%9A%8F%E6%83%B3%E4%B8%80%E4%BA%8C%E4%B9%9D/</guid>
+      <description>“在那遥远的朔方，安睡着我美丽的家乡” 色彩斑斓的聚光灯，打在一张张眉浓唇艳的白净小脸上；舞台两侧的投影布上，放着的是黑龙江的波涛滚滚。我听到台下不断有人喊着”信科加油”，但我不知道的是，那是元培学院。</description>
+    </item>
+    
+    <item>
+      <title>李涛PS课程笔记</title>
+      <link>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/%E6%9D%8E%E6%B6%9Bps%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 07 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%B8%BA%E5%B0%8F%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0/%E6%9D%8E%E6%B6%9Bps%E7%AC%94%E8%AE%B0/</guid>
+      <description>光色关系 色彩模式:HSB,Lab,RGB,CMYK 光的三原色:红 绿 蓝(RGB加色模式) 印刷三原色:青 品 黄(CMY减色模式) 相互为互补色，对方完全吸收对方 新建档案为RGB模式 预览时用CMY(视图—— 颜色</description>
+    </item>
+    
+    <item>
+      <title>搏击俱乐部</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E5%BD%B1%E8%AF%84/%E6%90%8F%E5%87%BB%E4%BF%B1%E4%B9%90%E9%83%A8/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E5%BD%B1%E8%AF%84/%E6%90%8F%E5%87%BB%E4%BF%B1%E4%B9%90%E9%83%A8/</guid>
+      <description>&lt;p&gt;抛开一切，重获自由&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>神们自己</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E7%A5%9E%E4%BB%AC%E8%87%AA%E5%B7%B1/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E7%A5%9E%E4%BB%AC%E8%87%AA%E5%B7%B1/</guid>
+      <description>&lt;p&gt;阿西莫夫对神的幻想&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>庆祝无意义</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E5%BA%86%E7%A5%9D%E6%97%A0%E6%84%8F%E4%B9%89/</link>
+      <pubDate>Sun, 25 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E5%BA%86%E7%A5%9D%E6%97%A0%E6%84%8F%E4%B9%89/</guid>
+      <description>这是米兰昆德拉的纯文学作品，前面两节看得发困，两节过后才开始呈现出主要情节。 阿兰，拉蒙，夏尔，凯列班是全书的四个主角，但是看下来感觉对斯大林，赫鲁晓夫以及拉弗朗克印象最为深刻。因为他们喜剧性质最为突出</description>
+    </item>
+    
+    <item>
+      <title>爱你就像爱生命</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E7%88%B1%E4%BD%A0%E5%B0%B1%E5%83%8F%E7%88%B1%E7%94%9F%E5%91%BD/</link>
+      <pubDate>Sun, 25 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E7%88%B1%E4%BD%A0%E5%B0%B1%E5%83%8F%E7%88%B1%E7%94%9F%E5%91%BD/</guid>
+      <description>&lt;p&gt;我总说我“爱你”，其实你不知道，那也是我对自己生命的深沉的热爱&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>数学之美</title>
+      <link>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E6%97%A0%E8%81%8A%E7%9A%84%E5%B9%BB%E6%83%B3%E5%AE%B6/%E4%B9%A6%E8%AF%84/%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E/</guid>
+      <description>&lt;p&gt;科普能力也是一个科学家的重要素质。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_1/</guid>
+      <description>香港第一天 行程 火车上生活 离开车站到达教大 迎新会（张唅生日） 食堂晚餐 校园定向赛活动以及总结会 摄影作品评比 回宿舍睡觉 感受 出了车站，扑面而来的不只有热气，还有反法轮功宣传横幅，匆匆走过，不敢多看更不敢拍照，</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_2/</guid>
+      <description>香港第二天 行程 早上六点半集合出发去西湾河（公交地铁） 9点到13点 协青社活动（魔术，小游戏，挑战赛） 13点到14点 尖沙咀吃午餐 14点到18点 紫荆广场，维多利亚港口，1881香港水警总督，诚品书店。 19点</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_3/</guid>
+      <description>香港第三天 行程 早上8点集合去戒毒村 13点半吃午饭 14点半路向社企奋斗人士分享会 18点贫富差距游戏 分享会 值得思考的问题 解决贫富差距的方法 缓解贫富差距的方法 社会给予弱者关怀之心 说话不要说大话空话 从细节入手</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_4/</guid>
+      <description>香港第四天 行程 1.早上8点集合去旺角体验拾荒者生活 2.午饭牛蛋河粉加紫菜汤 3.下午去好树设计参观 4.晚饭时间 5.分享会 分享会经验 1.演讲一定要清楚 2.演讲一定要分重点 3.演讲一定要把握时间 4.放下憎恨</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_5/</guid>
+      <description>香港第五天 生命教育体验感受 生命其实是一环扣一环的 家人在自己的生活中是非常重要的 不要逃避自己，应该发现真实的自己 发现自己之后更要记住自己，不忘初心 明白自己有什么，明白自己要什么 学会表达爱 自己讨厌的其实也</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/hk_day_6/</guid>
+      <description>香港第六天 自由行 早上9点吃早饭 出发去沙田购物 party room 维港夜景 回家</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81%E6%84%9F%E6%83%B3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81%E6%84%9F%E6%83%B3/</guid>
+      <description>京港交流感想 初到香港，正是烈日当空的下午，随火车运行了26个小时的心也开始躁动起来。 Oneal和阿峰是我们遇到的首批香港教育大学的学生，Oneal高大威猛，身材壮硕，表情有点凶狠，给我一种风雨欲来墙欲</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/%E4%BA%AC%E6%B8%AF%E5%9B%A2%E4%BD%93%E6%8A%A5%E5%91%8A%E4%B9%8B%E8%B4%AB%E5%AF%8C%E5%B7%AE%E8%B7%9D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/45%E5%BA%A6%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E4%BA%AC%E6%B8%AF%E4%BA%A4%E6%B5%81/%E4%BA%AC%E6%B8%AF%E5%9B%A2%E4%BD%93%E6%8A%A5%E5%91%8A%E4%B9%8B%E8%B4%AB%E5%AF%8C%E5%B7%AE%E8%B7%9D/</guid>
+      <description>京港团体报告之贫富差距 富人餐 富人餐活动中，我抽到了富人角色。于是乎在周围穷人的注视下，我和其他三个同学开始吃大餐。其他同学清水面包，我们披萨意面。这种感觉非常不舒服。贫富差距以食物分配的形式赤裸裸地展</description>
+    </item>
+    
+  </channel>
+</rss>

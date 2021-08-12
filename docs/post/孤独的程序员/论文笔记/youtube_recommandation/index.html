@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Youtube的推荐系统是如何炼成的 - Shuryne</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="" /><meta name="description" content="2016年，Google在《Deep Neural Networks for YouTube Recommendations》中开源的Youtube的推荐系统架构，堪称经典推荐系统工业落地典范
+" /><meta name="keywords" content="Blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.81.0 with theme even" />
+
+
+<link rel="canonical" href="https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recommandation/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.5f09d4f23f442ea60131fd8558e1bef4b9e70e968a463bdc11211636f64e5950.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Youtube的推荐系统是如何炼成的" />
+<meta property="og:description" content="2016年，Google在《Deep Neural Networks for YouTube Recommendations》中开源的Youtube的推荐系统架构，堪称经典推荐系统工业落地典范" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/youtube_recommandation/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-28T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-06-28T00:00:00&#43;00:00" />
+
+<meta itemprop="name" content="Youtube的推荐系统是如何炼成的">
+<meta itemprop="description" content="2016年，Google在《Deep Neural Networks for YouTube Recommendations》中开源的Youtube的推荐系统架构，堪称经典推荐系统工业落地典范"><meta itemprop="datePublished" content="2021-06-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-06-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1722">
+<meta itemprop="keywords" content="推荐系统," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Youtube的推荐系统是如何炼成的"/>
+<meta name="twitter:description" content="2016年，Google在《Deep Neural Networks for YouTube Recommendations》中开源的Youtube的推荐系统架构，堪称经典推荐系统工业落地典范"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Shuryne</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Shuryne</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Youtube的推荐系统是如何炼成的</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-06-28 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/"> 孤独的程序员 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#总体介绍">总体介绍</a></li>
+        <li><a href="#候选生成粗召回">候选生成（粗召回）</a></li>
+        <li><a href="#排序精排">排序（精排）</a></li>
+        <li><a href="#总结">总结</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>2016年，Google在《<a href="https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/45530.pdf">Deep Neural Networks for YouTube Recommendations</a>》中开源的Youtube的推荐系统架构，堪称经典推荐系统工业落地典范</p>
+<h2 id="总体介绍">总体介绍</h2>
+<ol>
+<li>两阶段模型架构：候选生成+排序（也即粗召回+精排）</li>
+<li>评价指标：离线模型指标采用Metrics(precision/recall/ranking loss&hellip;)，最终模型/算法策略有效性指标采用A/B Testing。A/B Testing能够观察到更细致的指标，例如观看时长等，更重要的一个原因是离线指标并不总是和最终产品效果保持一致性</li>
+</ol>
+<h2 id="候选生成粗召回">候选生成（粗召回）</h2>
+<ol>
+<li>
+<p>问题建模：超大规模多分类，根据user_context_embedding和video_embedding进行softmax计算</p>
+</li>
+<li>
+<p>模型结构：三个全链接DNN模块(使用ReLU激活函数)，输入是用户浏览历史、搜索历史、人口统计学信息、其余上下文信息concat得到的向量；离线输出时，直接利用softmax计算进行分类获得结果，线上输出时，为了保证性能减少计算，对输出向量采用局部敏感哈希的方式得到TopN结果</p>
+<ul>
+<li>引入深度网络结构的一个好处是能够将任意连续/离散特征添加进模型中，而传统的基于矩阵分解的推荐系统则不能将更多其他特征添加进去参与用户向量的训练</li>
+</ul>
+</li>
+<li>
+<p>输入特征</p>
+<ul>
+<li>用户浏览历史：将历史观看序列视频进行编码，加权平均</li>
+<li>用户历史搜索query：将token转embedding，加权平均</li>
+<li>人口统计学信息：性别、地域、年龄等</li>
+<li>其他上下文信息：登陆设备、登陆状态等</li>
+<li>Example Age：视频上传时间，基于数据insight提出来的一个特征，加入模型后能够更好地拟合数据分布</li>
+</ul>
+</li>
+<li>
+<p>样本label选择策略</p>
+<ul>
+<li>数据来源不仅包括推荐侧，还包括搜索侧</li>
+<li>每个用户生成固定数量的训练样本：防止loss被少数用户主导</li>
+<li>抛弃序列信息：去掉用户搜索历史和浏览历史的序列信息，让分类器不能显式找到label来源</li>
+<li>不对称的共同浏览：用户浏览视频通常存在是序列化现象，一开始看的广泛，然后慢慢往细化领域看，传统的协同过滤类算法，都是通过上下文信息来预测中间节点用户观看的视频，而在A/B Testing中，只利用上文信息，来预测下一次观看视频的方式，表现更好</li>
+</ul>
+</li>
+<li>
+<p>网络深度和特征数量实验：特征数量越多，网络越深（三层基本已经达到峰值），效果指标越好</p>
+</li>
+</ol>
+<h2 id="排序精排">排序（精排）</h2>
+<ol>
+<li>
+<p>问题建模：面对的数据数量级为百，所以能够利用更精细更多的特征来学习用户和视频之间的关系。单纯使用CTR指标并不是最好，靠关键词吸引高点击的视频未必会被播放，因此目标设定为与观看时长相关</p>
+</li>
+<li>
+<p>模型结构：和粗召回阶段模型结构基本类似，也是三层全链接DNN模块；离线输出使用weighted逻辑回归，线上输出直接使用指数函数</p>
+</li>
+<li>
+<p>特征表达</p>
+<ul>
+<li>特征工程：搜索推荐场景下仍不可避免地需要进行重要的特征工程，其中最难的是如何建模用户时序行为。用户和视频所在频道之间的数量特征和时间特征非常重要；将粗召回阶段的信息传播到排序层能起到一定的优化效果</li>
+<li>类别特征embedding：类似于Bert的token embedding</li>
+<li>归一化连续特征：归一化使网络训练更加高效，同时加入平方根项和二次项，增强网络表达能力</li>
+</ul>
+</li>
+<li>
+<p>目标建模：视频观看时长。正样本权重为观看时长，负样本权重为1，最后一层采用weighted逻辑回归</p>
+</li>
+<li>
+<p>网络宽度和深度实验：三层模型效果性价比高</p>
+</li>
+</ol>
+<h2 id="总结">总结</h2>
+<p>2016年Google的这篇论文属于工业界少见的集大成者式，包含了很多工业处理上的具体处理方案，清晰的展现了如何发现问题到解决问题的思路脉络，非常精彩，值得精读。但是奈何原论文有些地方读起来有些晦涩，不知道是否是推荐系统领域的论文风格就是这样子的，所以晦涩的部分参考了知乎上的二次解读。</p>
+<p>读这篇论文的动机，是最近在工作中很多项目大多属于一次性、临时性的，希望能够开展一些长期性、基础性的项目建设，并能因此有所积累，产生复利效应。从论文中借鉴学习推荐系统领域是如何发现、建模、处理一些重要问题的经验，希望能够迁移学习到新的领域（金融NLP）工作中，带来新的想法和思路。</p>
+<p>网络结构部分没有太多的创新，更多的在是</p>
+<ul>
+<li>输入特征的新发现和组合</li>
+<li>离线/线上不同场景根据性能要求做出不同处理</li>
+<li>指标确定方面并没有单纯仅利用传统通用指标，而是结合使用更加接地气更加实际的A/B Testing</li>
+</ul>
+<p><strong>参考资料</strong></p>
+<ol>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/45530.pdf">Youtube Recommand Paper</a></li>
+</ol>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/">推荐系统</a>
+          </div>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div>
+    <div align="center">
+        Abandon Everything And Regain Freedom
+    </div>
+</div>
+
+<div>
+    <p></p>
+</div>
+
+<div class="social-links">
+      <a href="https://github.com/Shuryne" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.douban.com/people/151765782" class="iconfont icon-douban" title="douban"></a>
+</div>
+
+<div>
+    <p><br/></p>
+</div>
+
+
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

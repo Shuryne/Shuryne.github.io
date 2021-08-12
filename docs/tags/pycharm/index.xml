@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PyCharm on Shuryne</title>
+    <link>https://Shuryne.github.io/tags/pycharm/</link>
+    <description>Recent content in PyCharm on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/tags/pycharm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>提高开发效率（三）：好用的Pycharm</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-pycharm/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E5%B7%A5%E5%85%B7%E7%AC%94%E8%AE%B0/%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87-pycharm/</guid>
+      <description>&lt;p&gt;记录并积累自己的PyCharm使用习惯&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

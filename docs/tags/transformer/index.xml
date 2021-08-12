@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>transformer on Shuryne</title>
+    <link>https://Shuryne.github.io/tags/transformer/</link>
+    <description>Recent content in transformer on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/tags/transformer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NLP基石：Transformer</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/transformer/</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/transformer/</guid>
+      <description>&lt;p&gt;2017年底，准确的说是11月，是计算机人工智能领域一个重要的时间节点。因为在那个时候，论文《&lt;a href=&#34;https://arxiv.org/pdf/1706.03762.pdf&#34; title=&#34;Attention is all you need&#34;&gt;Attention Is All You Need&lt;/a&gt;》发布了。Transformer的发布，为NLP领域新的研究范式（预训练+微调）奠定了基础，也成为了人工智能众多领域的一大基石，成千上万的前沿研究或多或少都能在浮光掠影中发现它的身影。&lt;/p&gt;
+&lt;p&gt;这篇论文也是我入坑NLP以来阅读和翻阅次数最多的论文，无论是阅读Transformer-based的相关论文和文章、魔改模型、算法面试、还是遇到Attention相关的问题，总会回到这篇经典论文。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

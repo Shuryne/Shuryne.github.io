@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Batch Norm：通过标准化更好地管理梯度流 - Shuryne</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="" /><meta name="description" content="基于反向传播的神经网络，如何管理梯度流是训练的关键
+" /><meta name="keywords" content="Blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.81.0 with theme even" />
+
+
+<link rel="canonical" href="https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch-norm/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.5f09d4f23f442ea60131fd8558e1bef4b9e70e968a463bdc11211636f64e5950.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Batch Norm：通过标准化更好地管理梯度流" />
+<meta property="og:description" content="基于反向传播的神经网络，如何管理梯度流是训练的关键" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/batch-norm/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-27T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-06-27T00:00:00&#43;00:00" />
+
+<meta itemprop="name" content="Batch Norm：通过标准化更好地管理梯度流">
+<meta itemprop="description" content="基于反向传播的神经网络，如何管理梯度流是训练的关键"><meta itemprop="datePublished" content="2021-06-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-06-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="763">
+<meta itemprop="keywords" content="batch norm," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Batch Norm：通过标准化更好地管理梯度流"/>
+<meta name="twitter:description" content="基于反向传播的神经网络，如何管理梯度流是训练的关键"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Shuryne</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Shuryne</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Batch Norm：通过标准化更好地管理梯度流</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-06-27 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/"> 孤独的程序员 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#1-出发点">1. 出发点</a></li>
+            <li><a href="#2-怎么做">2. 怎么做</a></li>
+            <li><a href="#3-使用batch-norm的优势">3. 使用<code>Batch Norm</code>的优势</a></li>
+            <li><a href="#4-总结">4. 总结</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>基于反向传播的神经网络，如何管理梯度流是训练的关键</p>
+<p>论文地址: <a href="https://arxiv.org/pdf/1502.03167.pdf">Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</a></p>
+<h3 id="1-出发点">1. 出发点</h3>
+<p>解决神经网络训练困难的问题：多层神经网络中，每层的输出数据分布都是不一样的。特别地，当前面层的参数发生变化时，后面每一层的输出分布都会发生变化，导致网络需要不断学习新的分布。往往使得训练时只好使用较低的学习率和精细的参数初始化才可能训的好。这种现象称为<code>internal covariate shift</code>。</p>
+<h3 id="2-怎么做">2. 怎么做</h3>
+<p>全局白化代价昂贵且不是全局可导，因此做了两个必要假设：</p>
+<ol>
+<li>直接简单的标准化数据分布，会限制网络表征能力，因此为了增强每层网络的表征能力，将标准化后的分布进行一次线性变换，每层BN的线性变换参数是相同的，随网络参数一起进行训练优化</li>
+<li>为了适配<code>SGD</code>算法，使<code>用mini-batch</code>的均值方差来估计样本总体的均值方差</li>
+</ol>
+<p>模型<code>inference</code>期间，<code>BN</code>层的均值方差用训练集的整体样本均值方差替代，而不是用<code>inference data</code>的均值方差</p>
+<h3 id="3-使用batch-norm的优势">3. 使用<code>Batch Norm</code>的优势</h3>
+<ol>
+<li>能使用更高的学习率，减少参数初始化的人工成本，更好地管理梯度流，缓解梯度消失：神经网络每层输出经过<code>Sigmoid</code>之类的激活函数，输入值在零附近的出来的梯度会比较好，<code>BN</code>使得输入分布在零附近，会获得比较好的梯度值，缓解梯度消失，也能使用较高学习率进行训练</li>
+<li>能起到正则化缓解过拟合的效果，减少dropout的使用: 每个<code>batch</code>内的均值方差和全部数据的均值方差之间存在噪声偏差，从而给模型训练引入一定的噪声，增强泛化能力</li>
+<li>加速模型收敛：没有进行<code>BN</code>的输入<code>feature</code>对结果的影响是不一样的，导致<code>loss</code>收敛较慢，<code>BN</code>使得不同的<code>feature</code>对于结果的收敛影响是基本一致的，从而加快模型收敛</li>
+</ol>
+<h3 id="4-总结">4. 总结</h3>
+<p>CV领域一篇经典论文，读来非常有意思，表述清晰，结构完整，给NLP领域的前沿发展也带来不少启示，值得精读。</p>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/batch-norm/">batch norm</a>
+          </div>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div>
+    <div align="center">
+        Abandon Everything And Regain Freedom
+    </div>
+</div>
+
+<div>
+    <p></p>
+</div>
+
+<div class="social-links">
+      <a href="https://github.com/Shuryne" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.douban.com/people/151765782" class="iconfont icon-douban" title="douban"></a>
+</div>
+
+<div>
+    <p><br/></p>
+</div>
+
+
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

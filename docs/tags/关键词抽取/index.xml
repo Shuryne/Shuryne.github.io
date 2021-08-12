@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>关键词抽取 on Shuryne</title>
+    <link>https://Shuryne.github.io/tags/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/</link>
+    <description>Recent content in 关键词抽取 on Shuryne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 26 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Shuryne.github.io/tags/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关键词抽取这件“小事”</title>
+      <link>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/</guid>
+      <description>&lt;p&gt;关键词抽取，看似一件简单的小事，事实上目前的效果并不乐观&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

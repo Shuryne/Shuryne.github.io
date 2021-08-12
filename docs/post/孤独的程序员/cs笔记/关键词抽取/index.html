@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>关键词抽取这件“小事” - Shuryne</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="" /><meta name="description" content="关键词抽取，看似一件简单的小事，事实上目前的效果并不乐观
+" /><meta name="keywords" content="Blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.81.0 with theme even" />
+
+
+<link rel="canonical" href="https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.5f09d4f23f442ea60131fd8558e1bef4b9e70e968a463bdc11211636f64e5950.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="关键词抽取这件“小事”" />
+<meta property="og:description" content="关键词抽取，看似一件简单的小事，事实上目前的效果并不乐观" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Shuryne.github.io/post/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/cs%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-26T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-06-26T00:00:00&#43;00:00" />
+
+<meta itemprop="name" content="关键词抽取这件“小事”">
+<meta itemprop="description" content="关键词抽取，看似一件简单的小事，事实上目前的效果并不乐观"><meta itemprop="datePublished" content="2021-06-26T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-06-26T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1004">
+<meta itemprop="keywords" content="关键词抽取," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="关键词抽取这件“小事”"/>
+<meta name="twitter:description" content="关键词抽取，看似一件简单的小事，事实上目前的效果并不乐观"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Shuryne</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Shuryne</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">关键词抽取这件“小事”</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-06-26 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/"> 孤独的程序员 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#常见算法及评价">常见算法及评价</a>
+          <ul>
+            <li><a href="#1-tf-idf">1. TF-IDF</a></li>
+            <li><a href="#2-textrank">2. TextRank</a></li>
+            <li><a href="#3-topic-model">3. Topic Model</a></li>
+            <li><a href="#4-word2vec">4. Word2vec</a></li>
+          </ul>
+        </li>
+        <li><a href="#别人的经验">别人的经验</a>
+          <ul>
+            <li><a href="#刘知远5"><a href="https://www.zhihu.com/question/21104071">刘知远</a></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>关键词抽取，看似一件简单的小事，事实上目前的效果并不乐观</p>
+<h2 id="常见算法及评价">常见算法及评价</h2>
+<h3 id="1-tf-idf">1. TF-IDF</h3>
+<p>说明：<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a>利用词频（内部频率信息）和逆文档频率（外部信息）综合对关键词进行权重计算：
+$$
+\color{blue}{Weight = Term Frequency(TF)*Inverse Document Frequency(IDF) \tag{1}}
+$$</p>
+<p>时间复杂度：$\color{blue}{O(n)}$</p>
+<p>评价：</p>
+<ol>
+<li>逆文档频率相当于利用外部统计信息对内部词频进行权重调整，实现了较强的baseline</li>
+<li>由于对外部信息有依赖，若外部信息不及时更新，会出现最近年份等数字词（2019等）的IDF值较高，从而导致总体权重较高；除此之外，很多数字词都会获得较高的权重，如23、500等，这可能是因为外部文档缺少日期之类的信息</li>
+</ol>
+<h3 id="2-textrank">2. TextRank</h3>
+<p>说明：<a href="https://www.aclweb.org/anthology/W04-3252.pdf" title="TextRank: Bringing Order into Text">TextRank</a>基于PageRank思想，考虑词的上下文共现（内部结构信息），构建关键词网络，并迭代计算节点边的权重</p>
+<p>时间复杂度：</p>
+<p>评价：</p>
+<ol>
+<li>图模型，速度上比TF-IDF低</li>
+<li>只利用了文档内部信息，缺少外部辅助信息，所以导致效果上会抽取出一些无关的高频词（通常是副词）</li>
+<li>后处理方面可以通过词性标注进一步过滤，但是严重依赖词性标注的性能，但是目前没看到有人这样做过</li>
+</ol>
+<h3 id="3-topic-model">3. Topic Model</h3>
+<p>说明：常用Latent Dirichlet allocation（LDA）模型</p>
+<p>评价：待完善</p>
+<h3 id="4-word2vec">4. Word2vec</h3>
+<p>说明：苏剑林在<a href="https://kexue.fm/archives/4316" title="苏剑林-科学空间">利用Word2vec抽取关键词</a>中提出的一种基于word2vec的关键词抽取方法，核心思想是用文档中的词来生成原始文档（也即是一串连续词），不同的词生成文档的概率不同，概率较高的就是关键词</p>
+<p>时间复杂度：$O(n^2)$</p>
+<p>评价：</p>
+<ol>
+<li>对于长文本，效率下降极其厉害，若是篇章级别关键词抽取，不建议使用</li>
+<li>核心思想基于$\color{blue}{p(s|w_i)=p(w_1,w_2,&hellip;,w_n|w_i)=\Sigma_{k=1}^{n}p(w_k|w_i)}$​，考虑了文档内部词之间的转移关系，没有考虑词之间顺序、窗口共现等结构关系，公式表达比较简单粗暴。只要一个词能够“复现”出全文，那就表示是关键词，理论上是有一定难度的</li>
+</ol>
+<h2 id="别人的经验">别人的经验</h2>
+<h3 id="刘知远5"><a href="https://www.zhihu.com/question/21104071">刘知远</a></h3>
+<ul>
+<li><span style="color:red;">TF-IDF是一个很强的baseline，具有较强普适性，基本能应付大部分关键词抽取场景</span></li>
+<li>主题模型抽取的关键词比较宽泛，不能很好体现主题</li>
+<li>TextRank并不比TF-IDF有明显优势，而且因为设计构建图和随机游走的迭代算法，效率较低</li>
+<li>对中文来说，分词以及词性标注性能对关键词抽取效果至关重要</li>
+<li>从性能上来说，监督方法比以上无监督方法都会好很多</li>
+</ul>
+<p><strong>参考资料</strong></p>
+<ol>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF Wiki</a></p>
+</li>
+<li>
+<p><a href="https://zh.wikipedia.org/wiki/PageRank">PageRank Wiki</a></p>
+</li>
+<li>
+<p><a href="https://www.aclweb.org/anthology/W04-3252.pdf" title="TextRank: Bringing Order into Text">TextRank Paper</a></p>
+</li>
+<li>
+<p><a href="https://kexue.fm/archives/4316" title="苏剑林-科学空间">科学空间</a></p>
+</li>
+<li>
+<p><a href="https://www.zhihu.com/question/21104071">关键词抽取有哪些方案</a></p>
+</li>
+</ol>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%85%B3%E9%94%AE%E8%AF%8D%E6%8A%BD%E5%8F%96/">关键词抽取</a>
+          </div>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div>
+    <div align="center">
+        Abandon Everything And Regain Freedom
+    </div>
+</div>
+
+<div>
+    <p></p>
+</div>
+
+<div class="social-links">
+      <a href="https://github.com/Shuryne" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.douban.com/people/151765782" class="iconfont icon-douban" title="douban"></a>
+</div>
+
+<div>
+    <p><br/></p>
+</div>
+
+
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
